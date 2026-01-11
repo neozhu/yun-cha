@@ -73,7 +73,7 @@ export default function Home() {
       </div>
 
       <header className="sticky top-0 z-30 border-b border-[#e5d7bf] bg-[#fffaf1]/85 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-full bg-gradient-to-br from-[#d8a64b] via-[#f0d59a] to-[#b3771d] shadow-[0_0_0_1px_rgba(0,0,0,0.05)]" />
             <div>
@@ -95,19 +95,19 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="relative z-10 mx-auto max-w-6xl space-y-16 px-6 pb-20 pt-14">
-        <section className="grid gap-10 lg:grid-cols-[1.2fr,0.8fr]">
-          <div className="space-y-6">
+      <main className="relative z-10 mx-auto max-w-6xl space-y-12 px-4 pb-16 pt-10 sm:px-6 sm:pb-20 sm:pt-14 lg:space-y-16">
+        <section className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr] lg:gap-10">
+          <div className="space-y-5 sm:space-y-6">
             <p className="text-xs uppercase tracking-[0.35em] text-[#b3771d]">
               高山红茶 · 岩韵乌龙 · 年份普洱
             </p>
-            <h1 className="font-[var(--font-display)] text-4xl leading-tight text-[#1c130d] sm:text-5xl lg:text-6xl">
+            <h1 className="font-[var(--font-display)] text-3xl leading-tight text-[#1c130d] sm:text-4xl lg:text-6xl">
               云茶 · Yun Chá
-              <span className="block text-[32px] font-normal leading-tight text-[#6a5340] sm:text-[40px]">
+              <span className="block text-2xl font-normal leading-tight text-[#6a5340] sm:text-[32px] lg:text-[40px]">
                 致敬送礼与办公室的茶礼美学
               </span>
             </h1>
-            <p className="max-w-2xl text-lg text-[#5a4837]">
+            <p className="max-w-2xl text-base text-[#5a4837] sm:text-lg">
               甄选武夷桐木关、凤凰单丛、冰岛老寨等山场；手工焙火与恒温醒茶，将茶的层次、礼节与空间气质，化作一杯好茶。
             </p>
             <div className="flex flex-wrap gap-4">
@@ -128,7 +128,7 @@ export default function Home() {
               {highlights.map((item) => (
                 <div
                   key={item.label}
-                  className="rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)]"
+                  className="rounded-2xl border border-[#e8ddc6] bg-white px-3 py-3 shadow-[0_8px_30px_rgba(0,0,0,0.06)] sm:px-4"
                 >
                   <p className="text-xs uppercase tracking-[0.2em] text-[#b3771d]">{item.label}</p>
                   <p className="mt-1 text-2xl font-semibold text-[#c2872a]">{item.value}</p>
@@ -196,11 +196,11 @@ export default function Home() {
               索要完整茶谱
             </a>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-3 md:gap-6">
             {signatureTeas.map((tea) => (
               <div
                 key={tea.name}
-                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]"
+                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-5 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)] md:p-6"
               >
                 <div className="relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]">
                   <Image
@@ -208,7 +208,7 @@ export default function Home() {
                     alt={tea.name}
                     width={800}
                     height={500}
-                    className="h-44 w-full object-cover"
+                    className="h-36 w-full object-cover md:h-44"
                     sizes="(min-width: 768px) 33vw, 100vw"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
@@ -230,7 +230,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid gap-6 rounded-3xl border border-[#e8ddc6] bg-white p-8 shadow-[0_18px_60px_rgba(0,0,0,0.06)] lg:grid-cols-[1.1fr,0.9fr]">
+        <section className="grid gap-6 rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] sm:p-8 lg:grid-cols-[1.1fr,0.9fr]">
           <div className="space-y-3">
             <p className="text-xs uppercase tracking-[0.3em] text-[#b3771d]">For Gift & Office</p>
             <h2 className="font-[var(--font-display)] text-3xl text-[#1c130d]">礼赠与办公室方案</h2>
@@ -243,7 +243,7 @@ export default function Home() {
                 alt="办公室茶席氛围"
                 width={1600}
                 height={900}
-                className="h-44 w-full object-cover"
+                className="h-36 w-full object-cover md:h-44"
                 sizes="(min-width: 1024px) 520px, 100vw"
               />
             </div>
