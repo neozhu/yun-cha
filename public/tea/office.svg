@@ -1,0 +1,33 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-office" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF9EE"/>
+      <stop offset="50%" stop-color="#F4E5CB"/>
+      <stop offset="100%" stop-color="#E3CCA5"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E7CFA0"/>
+      <stop offset="100%" stop-color="#CFA05C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-office)"/>
+  <g opacity="0.1">
+    <circle cx="310" cy="160" r="150" fill="#D8A64B"/>
+    <circle cx="1340" cy="760" r="210" fill="#B3771D"/>
+  </g>
+  <rect x="180" y="520" width="1240" height="190" rx="24" fill="url(#desk)" stroke="#B3771D" stroke-width="4" opacity="0.9"/>
+  <rect x="260" y="400" width="140" height="140" rx="28" fill="#F7E7C9" stroke="#E0CDA7" stroke-width="2"/>
+  <rect x="440" y="420" width="120" height="120" rx="26" fill="#FDF7ED" stroke="#E0CDA7" stroke-width="2"/>
+  <rect x="640" y="380" width="170" height="160" rx="32" fill="#F7E7C9" stroke="#E0CDA7" stroke-width="2"/>
+  <rect x="860" y="410" width="140" height="130" rx="28" fill="#FDF7ED" stroke="#E0CDA7" stroke-width="2"/>
+  <rect x="1080" y="390" width="190" height="150" rx="34" fill="#F7E7C9" stroke="#E0CDA7" stroke-width="2"/>
+  <g opacity="0.85">
+    <rect x="320" y="320" width="70" height="80" rx="18" fill="#C2872A"/>
+    <rect x="500" y="320" width="70" height="80" rx="18" fill="#B3771D"/>
+    <rect x="700" y="300" width="70" height="100" rx="18" fill="#8A5A1A"/>
+    <rect x="920" y="320" width="70" height="80" rx="18" fill="#C2872A"/>
+    <rect x="1140" y="300" width="70" height="100" rx="18" fill="#B3771D"/>
+  </g>
+  <text x="800" y="190" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="44" letter-spacing="5">OFFICE · 茶席</text>
+  <text x="800" y="240" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="18" letter-spacing="3">Tea Corner Placeholder</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FBF2E2"/>
+      <stop offset="50%" stop-color="#F3E3C4"/>
+      <stop offset="100%" stop-color="#E7CFA0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.2" r="0.7">
+      <stop offset="0%" stop-color="#EBCF98" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#EBCF98" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.8" cy="0.8" r="0.7">
+      <stop offset="0%" stop-color="#D8A64B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#D8A64B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <rect width="1600" height="900" fill="url(#glow2)"/>
+  <g opacity="0.25">
+    <circle cx="260" cy="180" r="160" fill="#D8A64B"/>
+    <circle cx="1340" cy="760" r="190" fill="#B3771D"/>
+  </g>
+  <g opacity="0.8">
+    <rect x="380" y="250" width="840" height="460" rx="52" fill="white" fill-opacity="0.7" stroke="#E0CDA7" stroke-width="2"/>
+    <rect x="420" y="310" width="760" height="340" rx="40" fill="#FBF6EB" stroke="#E8DDC6" stroke-width="2"/>
+    <rect x="450" y="360" width="700" height="120" rx="28" fill="#E7CFA0" fill-opacity="0.45"/>
+    <rect x="450" y="500" width="420" height="70" rx="20" fill="#D8A64B" fill-opacity="0.35"/>
+    <rect x="900" y="500" width="250" height="70" rx="20" fill="#C2872A" fill-opacity="0.35"/>
+    <rect x="450" y="600" width="700" height="20" rx="10" fill="#C2872A" fill-opacity="0.25"/>
+    <rect x="450" y="640" width="520" height="16" rx="8" fill="#B3771D" fill-opacity="0.3"/>
+  </g>
+  <text x="800" y="210" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="48" letter-spacing="6">YUN CHÁ — HERO</text>
+  <text x="800" y="270" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="20" letter-spacing="3">Light Luxe Placeholder</text>
+</svg>

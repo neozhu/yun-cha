@@ -1,0 +1,26 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-puer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8F1E3"/>
+      <stop offset="50%" stop-color="#EDE1CA"/>
+      <stop offset="100%" stop-color="#DCC7A0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-puer)"/>
+  <g opacity="0.16">
+    <circle cx="340" cy="180" r="160" fill="#A87022"/>
+    <circle cx="1320" cy="740" r="210" fill="#C2872A"/>
+  </g>
+  <g transform="translate(400 200)">
+    <circle cx="400" cy="250" r="240" fill="#FDF7ED" stroke="#E0CDA7" stroke-width="4"/>
+    <circle cx="400" cy="250" r="190" fill="#EAD7AF"/>
+    <circle cx="400" cy="250" r="150" fill="#CFA05C"/>
+    <circle cx="400" cy="250" r="110" fill="#9B6A2E"/>
+    <circle cx="400" cy="250" r="70" fill="#6B4320"/>
+    <circle cx="400" cy="250" r="36" fill="#3A2412"/>
+    <path d="M400 40 C440 120 520 200 600 220" stroke="#7C5325" stroke-width="18" stroke-linecap="round" opacity="0.7"/>
+    <path d="M400 40 C360 120 280 200 200 220" stroke="#7C5325" stroke-width="18" stroke-linecap="round" opacity="0.45"/>
+  </g>
+  <text x="800" y="170" text-anchor="middle" fill="#2B1C13" font-family="serif" font-size="44" letter-spacing="5">PUER · 普洱</text>
+  <text x="800" y="220" text-anchor="middle" fill="#6A5340" font-family="sans-serif" font-size="18" letter-spacing="3">Aged Tea Cake Placeholder</text>
+</svg>

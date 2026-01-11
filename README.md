@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## 项目简介
 
-## Getting Started
+云茶 Yun Chá 高端茶礼/办公室茶席单页，使用 Next.js App Router + Tailwind，风格为明亮琥珀/奶油系，突出红茶、乌龙、普洱的礼赠与办公场景。页面包含：英雄区、茶款合集、礼赠/办公室方案、风味流程以及订购联系表单（Formspree 占位）。
 
-First, run the development server:
+## 快速开始
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
+# 浏览器访问 http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+开发时主要编辑：
+- `app/page.tsx`：页面内容与区块。
+- `app/globals.css`：配色、字体（Playfair Display/Manrope）和全局渐变背景。
+- `app/layout.tsx`：站点元信息与字体加载。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 自定义与素材
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 图片：在 `public/tea/` 放置真实茶园/茶器照片，替换 `page.tsx` 中的占位路径。
+- 配色：在 `app/globals.css` 中调整 `--ink / --amber / --brass` 等变量即可更新主题。
+- 文案：直接修改 `signatureTeas`、`services`、`rituals` 数据，以符合实际茶款与服务。
 
-## Learn More
+## 表单与提交
 
-To learn more about Next.js, take a look at the following resources:
+订购表单当前指向 Formspree 占位 `https://formspree.io/f/your-form-id`。请替换为：
+- 你的 Formspree ID，或
+- 自建 API 路由（例如 `app/api/contact/route.ts`）对接邮件/CRM，再将 `action` 指向该接口。
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 脚本
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+pnpm dev      # 本地开发
+pnpm lint     # 代码检查
+```
 
-## Deploy on Vercel
+## 部署
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+可直接部署到 Vercel 或任意支持 Next.js 的平台。生产环境建议设置自定义域名，并为表单/邮件服务配置所需的密钥。*** End Patch

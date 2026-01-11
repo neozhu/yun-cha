@@ -6,18 +6,21 @@ const signatureTeas = [
     region: "武夷山 · 红茶",
     notes: "可可与山蜜，绵密焦糖甜感，绵长尾韵。",
     pairing: "高端礼赠 / 下午茶",
+    image: "/tea/hongcha.png",
   },
   {
     name: "大红袍 · 炉火",
     region: "武夷岩茶 · 乌龙",
     notes: "岩韵矿香与焙火层次，辛香柑橘收尾。",
     pairing: "会客 / 餐后",
+    image: "/tea/wulong.png",
   },
   {
     name: "冰岛 · 2021",
     region: "临沧 · 普洱生茶",
     notes: "兰花冷香，清甜回甘，喉韵悠长。",
     pairing: "冥想 / 品鉴",
+    image: "/tea/puer.png",
   },
 ];
 
@@ -135,32 +138,45 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] bg-gradient-to-br from-white via-[#f8efdf] to-[#f0e2c8] p-8 shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
-            <div className="absolute right-6 top-6 rounded-full bg-[#f7e7c9] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#6a4a1f] shadow-[0_0_0_1px_rgba(0,0,0,0.04)]">
-              本月甄选
-            </div>
-            <div className="space-y-4 text-[#4c3928]">
-              <p className="text-sm text-[#715c48]">山场风味线索</p>
-              <h3 className="font-[var(--font-display)] text-3xl text-[#2b1c13]">桐木关·金骏眉 Reserve</h3>
-              <p className="text-[#5a4837]">
-                260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。
-              </p>
-              <div className="grid grid-cols-2 gap-3 text-sm">
-                <div className="rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3">
-                  <p className="text-xs text-[#7a6756]">推荐冲泡</p>
-                  <p className="text-base font-semibold text-[#c2872a]">92℃ · 6g · 100ml</p>
-                  <p className="text-[#7a6756]">前 2 泡低位注水，保留绵密甜香</p>
-                </div>
-                <div className="rounded-2xl border border-[#e8ddc6] bg-white px-4 py-3">
-                  <p className="text-xs text-[#7a6756]">适合场景</p>
-                  <p className="text-base font-semibold text-[#c2872a]">高端礼赠 / 会客</p>
-                  <p className="text-[#7a6756]">支持手写礼卡与定制刻字</p>
+          <div className="relative overflow-hidden rounded-3xl border border-[#e3d4b9] shadow-[0_20px_80px_rgba(0,0,0,0.08)]">
+            <Image
+              src="/tea/hero.png"
+              alt="茶席与茶器氛围"
+              fill
+              className="object-cover"
+              sizes="(min-width: 1024px) 520px, 100vw"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-[#fbf2e2]/85 to-[#fdf7ed]" />
+            <div className="absolute inset-0 flex flex-col justify-between p-8 text-[#4c3928]">
+              <div className="flex justify-end">
+                <div className="rounded-full bg-[#f7e7c9] px-3 py-1 text-xs uppercase tracking-[0.25em] text-[#6a4a1f] shadow-[0_0_0_1px_rgba(0,0,0,0.04)]">
+                  本月甄选
                 </div>
               </div>
-              <div className="flex gap-3 text-xs text-[#6a5340]">
-                <span className="rounded-full border border-[#e5d7bf] px-3 py-1">岩韵 · 焦糖</span>
-                <span className="rounded-full border border-[#e5d7bf] px-3 py-1">冷萃可选</span>
-                <span className="rounded-full border border-[#e5d7bf] px-3 py-1">限量 60 盒</span>
+              <div className="space-y-4">
+                <p className="text-sm text-[#715c48]">山场风味线索</p>
+                <h3 className="font-[var(--font-display)] text-3xl text-[#2b1c13]">桐木关·金骏眉 Reserve</h3>
+                <p className="text-[#5a4837]">
+                  260 小时匀火烘焙，焦糖与山蜜香交叠；附 3 段冲泡曲线，适配软水/硬水。
+                </p>
+                <div className="grid grid-cols-2 gap-3 text-sm">
+                  <div className="rounded-2xl border border-[#e8ddc6] bg-white/90 px-4 py-3">
+                    <p className="text-xs text-[#7a6756]">推荐冲泡</p>
+                    <p className="text-base font-semibold text-[#c2872a]">92℃ · 6g · 100ml</p>
+                    <p className="text-[#7a6756]">前 2 泡低位注水，保留绵密甜香</p>
+                  </div>
+                  <div className="rounded-2xl border border-[#e8ddc6] bg-white/90 px-4 py-3">
+                    <p className="text-xs text-[#7a6756]">适合场景</p>
+                    <p className="text-base font-semibold text-[#c2872a]">高端礼赠 / 会客</p>
+                    <p className="text-[#7a6756]">支持手写礼卡与定制刻字</p>
+                  </div>
+                </div>
+                <div className="flex gap-3 text-xs text-[#6a5340]">
+                  <span className="rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1">岩韵 · 焦糖</span>
+                  <span className="rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1">冷萃可选</span>
+                  <span className="rounded-full border border-[#e5d7bf] bg-white/80 px-3 py-1">限量 60 盒</span>
+                </div>
               </div>
             </div>
           </div>
@@ -186,6 +202,17 @@ export default function Home() {
                 key={tea.name}
                 className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-6 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]"
               >
+                <div className="relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]">
+                  <Image
+                    src={tea.image}
+                    alt={tea.name}
+                    width={800}
+                    height={500}
+                    className="h-44 w-full object-cover"
+                    sizes="(min-width: 768px) 33vw, 100vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
+                </div>
                 <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
                   <div className="absolute inset-0 bg-gradient-to-b from-[#f3e3c4]/70 to-transparent" />
                 </div>
@@ -210,6 +237,16 @@ export default function Home() {
             <p className="text-[#5a4837]">
               从定制礼盒到办公室茶席/冷萃，提供整套茶叶、茶器、冲泡 SOP 与空间陈列方案。
             </p>
+            <div className="relative overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed] shadow-[0_12px_40px_rgba(0,0,0,0.05)]">
+              <Image
+                src="/tea/office.png"
+                alt="办公室茶席氛围"
+                width={1600}
+                height={900}
+                className="h-44 w-full object-cover"
+                sizes="(min-width: 1024px) 520px, 100vw"
+              />
+            </div>
             <div className="grid gap-4 md:grid-cols-2">
               {services.slice(0, 2).map((svc) => (
                 <div key={svc.title} className="rounded-2xl border border-[#eee3ce] bg-[#fdf7ed] p-5">
