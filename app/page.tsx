@@ -200,31 +200,26 @@ export default function Home() {
             {signatureTeas.map((tea) => (
               <div
                 key={tea.name}
-                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white p-5 shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)] md:p-6"
+                className="group relative overflow-hidden rounded-3xl border border-[#e8ddc6] bg-white shadow-[0_18px_60px_rgba(0,0,0,0.06)] transition hover:-translate-y-1 hover:border-[#d8a64b]/60 hover:shadow-[0_25px_70px_rgba(0,0,0,0.08)]"
               >
-                <div className="relative mb-5 overflow-hidden rounded-2xl border border-[#e8ddc6] bg-[#fdf7ed]">
-                  <Image
-                    src={tea.image}
-                    alt={tea.name}
-                    width={800}
-                    height={500}
-                    className="h-36 w-full object-cover md:h-44"
-                    sizes="(min-width: 768px) 33vw, 100vw"
-                  />
+                <div className="relative h-36 w-full overflow-hidden md:h-44">
+                  <Image src={tea.image} alt={tea.name} fill className="object-cover" sizes="(min-width: 768px) 33vw, 100vw" />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fdf7ed]/70 opacity-80" />
                 </div>
                 <div className="absolute inset-0 opacity-0 transition group-hover:opacity-100">
                   <div className="absolute inset-0 bg-gradient-to-b from-[#f3e3c4]/70 to-transparent" />
                 </div>
-                <p className="text-xs uppercase tracking-[0.25em] text-[#b3771d]">{tea.region}</p>
-                <h3 className="mt-2 font-[var(--font-display)] text-2xl text-[#23160f]">{tea.name}</h3>
-                <p className="mt-3 text-sm text-[#5a4837]">{tea.notes}</p>
-                <div className="mt-5 flex flex-wrap gap-2 text-xs text-[#6a5340]">
-                  <span className="rounded-full border border-[#e5d7bf] px-3 py-1">手工拣剔</span>
-                  <span className="rounded-full border border-[#e5d7bf] px-3 py-1">单株采摘</span>
-                  <span className="rounded-full border border-[#e5d7bf] px-3 py-1">附水质指南</span>
+                <div className="space-y-3 px-5 pb-5 pt-4 md:px-6">
+                  <p className="text-xs uppercase tracking-[0.25em] text-[#b3771d]">{tea.region}</p>
+                  <h3 className="font-[var(--font-display)] text-2xl text-[#23160f]">{tea.name}</h3>
+                  <p className="text-sm text-[#5a4837]">{tea.notes}</p>
+                  <div className="flex flex-wrap gap-2 text-xs text-[#6a5340]">
+                    <span className="rounded-full border border-[#e5d7bf] px-3 py-1">手工拣剔</span>
+                    <span className="rounded-full border border-[#e5d7bf] px-3 py-1">单株采摘</span>
+                    <span className="rounded-full border border-[#e5d7bf] px-3 py-1">附水质指南</span>
+                  </div>
+                  <p className="text-sm font-semibold text-[#c2872a]">{tea.pairing}</p>
                 </div>
-                <p className="mt-6 text-sm font-semibold text-[#c2872a]">{tea.pairing}</p>
               </div>
             ))}
           </div>
