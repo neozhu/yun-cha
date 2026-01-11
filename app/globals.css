@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #0f1512;
+  --forest: #1b2b21;
+  --amber: #d6a75d;
+  --brass: #6a4a1f;
+  --cream: #f5efe4;
+  --line: rgba(255, 255, 255, 0.12);
+  --foreground: var(--cream);
+  --background: var(--ink);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-body);
+  --font-display: var(--font-display);
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(140% 120% at 10% 10%, rgba(214, 167, 93, 0.16), transparent),
+    radial-gradient(100% 100% at 90% 80%, rgba(107, 81, 48, 0.18), transparent),
+    var(--ink);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), "Times New Roman", serif;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(214, 167, 93, 0.35);
+  color: #0f1512;
 }
